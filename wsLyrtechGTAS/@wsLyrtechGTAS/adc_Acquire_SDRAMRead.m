@@ -1,0 +1,5 @@
+function adc_Acquire_SDRAMReadResult= adc_Acquire_SDRAMRead(obj,SamplesPerChannel)
+
+adc_Acquire_SDRAMReadResult=double(b64d(adc_Acquire_SDRAMRead(obj.wsLyrtech,SamplesPerChannel))); %using inherited method
+
+adc_Acquire_SDRAMReadResult=reshape(adc_Acquire_SDRAMReadResult,length(adc_Acquire_SDRAMReadResult)/SamplesPerChannel,SamplesPerChannel);

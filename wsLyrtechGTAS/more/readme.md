@@ -1,0 +1,1 @@
+Library of auxiliary functions to easily control specific functionalities of the Lyrtech MIMO testbed from Matlab

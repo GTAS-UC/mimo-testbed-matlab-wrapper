@@ -1,0 +1,5 @@
+rffe_SetFreq
+
+
+Test experimental functionalities.
+Consider adding them to the web service instead of the wrapper

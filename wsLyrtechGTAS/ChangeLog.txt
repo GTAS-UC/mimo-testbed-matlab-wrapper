@@ -1,0 +1,18 @@
+CHANGELOG:
+
+2011-07-30  Óscar González 
+
+-Improved speed of b64e.m and b64d.m (added b64e_java.m & b64d_java.m)
+-wsLyrtechGTAS.m has been rewritted to fix several bugs
+
+2012-12-15  Óscar González
+
+- Added autoupdate capabilities (wrapper_autoupdate.m, wrapper_version.m, wrapper_version.txt)
+- Class constructor wsLyrtechGTAS updated to use autoupdate functions
+- Format of ChangeLog.txt file improved
+- Project moved to Google Code
+
+2013-01-02  Óscar González
+
+- Complete rewrite of class constructor and update method
+
