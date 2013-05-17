@@ -39,9 +39,13 @@ rmdir(wsLyrtechGTAS_folder,'s');
 disp_msg('Downloading & unzipping new version...')
 filenames=unzip('https://api.github.com/repos/GTAS-UC/mimo-testbed-matlab-wrapper/zipball/master',wsLyrtechGTAS_grandfolder);
 disp_msg(sprintf('   %d files extracted',length(filenames)))
+aux_str=filenames{1}(length(wsLyrtechGTAS_grandfolder)+1:end);
+idx=strfind(aux_str,'\');
+unzipped_folder=aux_str(idx(1)+1:idx(2)-1);
+movefile(unzipped_folder,wsLyrtechGTAS_folder);
 
 disp_msg('Adding new version to Matlab path...')
-p = genpath(fullfile(wsLyrtechGTAS_grandfolder,'wsLyrtechGTAS'));
+p = genpath(wsLyrtechGTAS_folder);
 addpath(p);
 
 rehash;
