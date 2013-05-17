@@ -16,3 +16,7 @@ CHANGELOG:
 
 - Complete rewrite of class constructor and update method
 
+2013-05-17 Óscar González
+
+- Project moved to GitHub
+
