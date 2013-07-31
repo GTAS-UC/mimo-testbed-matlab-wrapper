@@ -39,7 +39,7 @@ url = URL(endpoint);
 httpConn = url.openConnection;
 
 % Set the appropriate HTTP parameters.
-httpConn.setRequestProperty('Content-Type','text/xml; charset=utf-8');
+httpConn.setRequestProperty('Content-Type','text/xml; charset=utf-8;');
 httpConn.setRequestProperty('SOAPAction',soapAction);
 httpConn.setRequestMethod('POST');
 
@@ -47,6 +47,7 @@ httpConn.setRequestMethod('POST');
 global cookiesGTAS
 
 %httpConn.setRequestProperty('User-Agent',['Matlab ' version]); 
+%httpConn.setRequestProperty('Expect','100-continue');
 
 for kk=length(cookiesGTAS):-1:1
     if strcmp(cookiesGTAS{kk}.url,endpoint)
